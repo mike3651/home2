@@ -1,0 +1,44 @@
+/**
+ * @author Michael Wilson 
+ * @version 1.0.0.
+ * @description This is the styling page used for every component. */
+
+/**********************************
+ *** BASIC COLOR THEME, MONOKAI ***
+ **********************************/
+.overall-container {
+    background-color: rgb(39, 40, 34);
+    width:100vw;
+    height:100vh;
+    color:white;
+}
+
+h1 {
+    color: rgb(249, 38, 114);
+}
+
+h2 {
+    color: rgb(102, 217, 239);
+}
+
+h3 {
+    color: rgb(166, 226, 46);
+}
+
+.key-word {
+    color: rgb(253, 151, 31);
+}
+
+/*********************
+ *** BASIC STYLING *** 
+ *********************/
+h1 {
+    text-align: center;
+}
+
+/********************
+ *** Hover tricks ***
+ ********************/
+.key-word:hover {
+    cursor: pointer;
+}
