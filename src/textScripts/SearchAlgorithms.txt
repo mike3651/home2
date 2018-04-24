@@ -1,0 +1,79 @@
+Welcome back!
+Once again this is nothing more than an item to help me prepare for my midterm in AI.
+
+Breadth first search:
+Description: Traverse through a Tree or Graph layer by layer, keeping the next things to look at in a queue (fringe keeper :O).
+Run Time: O(b^d) {Tree}, O(|V| + |E|) {Graph}
+	Tree - b represents the branching factor and d represents the depth of the tree.
+	Graph - V represents the number of vertices and E represents the number of edges.
+Space Complexity: O(b^d) {Tree}, O(|V|) {Graph}
+	Tree - b reprsents the branching factor and d represents the depth of the tree.
+	Garph - V represents the number of vertices.
+PsuedoCode:
+BFS(g: graph, s: startNode)
+	q = new Queue<ANYNode>
+	q.add(s)
+	while q is not empty:
+		t = q.remove()
+		t.visited = true
+		for every neighbor n of t:
+			if n is not visited:
+				q.add(n)
+			end if
+		end for
+	end while
+end
+
+Depth first search:
+Description: Traverse through a Tree of Graph by following one path until you can't search anymore, backing up the the last point and trying again.
+Run Time: O(b^d) {Tree} O(|V| + |E|) {Graph}
+	Tree - b represents the branching factor and d represents the depth of the tree.
+	Graph - V represents the number of vertices and E represents the number of edges.
+Space Complexity: O(b*d) {Tree}, O(|V|)
+	Tree - b represents the branching factor and d represents the depth of the tree.
+	Graph - V represents the number of vertices.
+Pseudocode:
+DFS(g: graph, s: startNode)
+	st = new Stack<ANYNode>
+	st.push(s)
+	while s is not empty:
+		t = st.pop()
+		t.visited = true
+		for every neighbor n of t:
+			if n is not visited:
+				st.push(n)
+			end if 
+		end for
+	end while
+end
+
+A* search:
+Description: This algorithm takes into consideration the cost to the current node + an estimated cost to the end node
+Run Time: O(b^d) {Tree}, O(|E|) {Graph}
+	Tree - b represents the branching factor and d represents the depth of the tree.
+	Graph - E reprsents the number of edges that we have to traverse through.
+Space Complexity: O(b^d) {Tree}, O(|V|) {Graph}
+	Tree - b represents the branching factor and d represents the depth of the tree.
+	Graph - V represents the number of vertices in the graph.
+Pseudocode:
+A*(g: graph, s: startNode, e: endNode):
+	pq = new PriorityQueue<anyNode>()
+	pq.add(s)
+	while pq is not empty:
+		t = pq.remove()
+		t.visited = true
+		if(t === e): 
+			return path
+		end if
+		for each neighbor n of t:
+			g = t.cost
+			h = costToEnd(n, e)
+			f = g + h
+			n.cost = min(n.cost, f)
+			if f > n.cost: 
+				updatePath(n)
+			end if
+		end for 
+	end while
+	return No path found
+end
