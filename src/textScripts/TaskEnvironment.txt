@@ -1,0 +1,39 @@
+Welcome to the Task Environment reference page!
+Fair warning, the purpose of this is to help me study for my midterm!
+With that out of the way, below you'll find all that you need to know about the task environment.
+
+Fully Observable - The agent can see the whole environment
+ex) Chess - A player can see the whole board at all times.
+
+Partially Observable - The agent is limited to a certain scope of the environment.
+ex) Magic the Gathering - One player can only see the cards in his or her hands at any given time, unless a card states otherwise.
+
+Single Agent - Anything that can be perceived by its environment by sensors.
+ex) PacMan in a world with just pellets.
+
+Multi Agent - Serveral different agents affecting the state of one environment.
+ex) Mario Kart - Several different players interacting with one another.
+
+Deterministic - The outcome of a game can be determined based on the current state.
+ex) Tic-tac-toe - It's a very simple game in which you can predict the end state of the game fairly easily. Pokemon games are another example of this.
+
+Stochastic - The outcome of a game is unkown.
+ex) Super Street Fighter IV Arcade mode - It's hard to determine who exactly will win in this game.
+
+Discrete - There are a finite set of possible outcomes for a game. 
+ex) The last of us - There are several different ways to get to the end game but the goal is all the same.
+
+Continuous - There are continually new possibilities of outcomes.
+ex) World of warcraft - This is a large old school MMORPG with no actual end goal.
+
+Static - The data knowledge to an agent won't change over time.
+ex) The questions on an online dating site.
+
+Dynamic - The data knowledge, to an agent, can change at any moment
+ex) Some online questionaires change the course of action based off of how a user might answer a question and how long it might take.
+
+Episodic - Previous actions that have been taken don't really do much with determining what might happen in the next state.
+ex) A really bad dating questionaire that tries to determine what kind of person you are.
+
+Sequential - Each state is linked to one another.
+ex) Tic-tac-toe - Each state is the result of an action made by the previous state.
