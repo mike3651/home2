@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProblemsComponent } from './problems/problems.component';
+import { AiComponent } from './ai/ai.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { ProblemsComponent } from './problems/problems.component';
     AppComponent,
     HomeComponent,
     ProblemsComponent,
+    AiComponent,
     ],
   imports: [
     BrowserModule
