@@ -1,0 +1,18 @@
+Heyo, here's yet another text file that's going to help me with my upcoming midterm! :D
+Below are some details regarding Constraint Search Problems
+ex) Graph coloring problem
+
+Variables - Objects that are being acted upon.
+
+Domain - The set of values that each object can have.
+
+Arc Consistency - State of which two variables in a CSP have two different values from the domain but satisfy a small solution to the overall problem.
+	ex) We want to color a map of the United states with no more than 6 colors. 
+		Variables: {Each of the states}
+		Domain: {Set of colors that we have}
+		Constraints: No two adjacent states may have the same color
+
+		Arc consistent: 
+			Color Washington blue and Oregon green  
+			These variables have different domain values assigned to them and meet the constraint in which:
+				WA.color !== OR.color
