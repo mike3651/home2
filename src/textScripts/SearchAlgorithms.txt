@@ -48,6 +48,10 @@ DFS(g: graph, s: startNode)
 end
 
 A* search:
+Notes:
+	For a heuristic to be admissible, it can't ever over-estimate the cost from the current node to the goal node.
+	If h is an admissible heurisitc, then h(n) = 0 for ever goal node.
+	
 Description: This algorithm takes into consideration the cost to the current node + an estimated cost to the end node
 Run Time: O(b^d) {Tree}, O(|E|) {Graph}
 	Tree - b represents the branching factor and d represents the depth of the tree.
